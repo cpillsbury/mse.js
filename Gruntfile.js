@@ -12,11 +12,11 @@ module.exports = function(grunt) {
         },
         browserify: {
             dist: {
-                src: 'src/mse.js',
+                src: 'src/js/mse.js',
                 dest: 'dist/mse.js'
             },
             dev: {
-                src: 'src/mse.js',
+                src: 'src/js/mse.js',
                 dest: 'dist/mse-debug.js',
                 options: {
                     browserifyOptions: {
@@ -51,11 +51,11 @@ module.exports = function(grunt) {
             },
             dist: {
                 src: '<%= browserify.dist.dest %>',
-                dest: 'dist/<%= pkg.name %>.min.js'
+                dest: 'dist/mse.min.js'
             },
             dev: {
                 src: '<%= browserify.dev.dest %>',
-                dest: 'dist/<%= pkg.name %>-debug.min.js'
+                dest: 'dist/mse-debug.min.js'
             }
         },
         watch: {
