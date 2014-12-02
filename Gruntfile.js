@@ -70,7 +70,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-browserify');
 
-    grunt.registerTask('default', ['clean', 'jshint', 'browserify', 'uglify', 'watch']);
-    // TODO: Handle clean (update clean task params)
-    grunt.registerTask('dev', ['jshint', 'browserify:dev', 'uglify:dev', 'watch']);
+    grunt.registerTask('default', ['clean', 'jshint', 'browserify:dist', 'uglify:dist', 'watch']);
+    grunt.registerTask('dev', ['clean', 'jshint', 'browserify:dev', 'uglify:dev', 'watch']);
+    grunt.registerTask('all', ['clean', 'jshint', 'browserify:dist', 'browserify:dev', 'uglify:dist', 'uglify:dev', 'watch']);
 };

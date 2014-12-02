@@ -8,8 +8,6 @@ var root = require('./window.js'),
     // TODO: Test to verify that webkit prefixes the 'sourceended' event type.
     webKitMediaSourceEvents = ['webkitsourceopen', 'webkitsourceclose', 'webkitsourceended'];
 
-root.console.log('in MediaSource module!');
-
 function hasClassReference(object, className) {
     return ((className in object) && (typeof object[className] === 'function'));
 }
