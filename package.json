@@ -1,6 +1,6 @@
 {
     "name": "mse",
-    "version": "1.0.0",
+    "version": "0.1.0",
     "description": "Cross-browser MSE Support where possible",
     "keywords": [
         "require",
